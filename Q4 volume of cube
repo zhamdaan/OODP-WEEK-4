@@ -1,0 +1,18 @@
+#include<iostream> 
+using namespace std ;
+
+class vol 
+{ int x ; 
+public : 
+vol ()
+{cin>>x ; }
+int volp ()
+ { cout<<"volume is "<<x*x*x ;
+  return 0 ;}
+ ~vol () {} 
+} ;
+int main () 
+{ vol A ; 
+A.volp () ; 
+return 0  ; 
+} 
