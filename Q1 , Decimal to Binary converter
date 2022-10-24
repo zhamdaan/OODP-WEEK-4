@@ -1,0 +1,40 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <stack> 
+using namespace std ; 
+class conDB 
+ { int x ;
+int temp ; 
+
+int count=0 ; 
+int remainder ; 
+ stack<int>A;
+ public  : 
+ conDB () 
+ { cout<<"enter the number to be converted ";
+     cin>>x;
+ }  
+ int convert () 
+ { temp=x ; 
+while (temp!=0)
+{  
+    remainder=temp%2;
+    temp=temp/2 ;
+    A.push (remainder) ;
+    count++ ;
+ }
+ while (count!=0)
+{ remainder = A.top () ;
+cout<<remainder ; 
+A.pop();
+ count--; 
+}
+return 0  ;  
+}
+~conDB () {}  
+};
+int main() { 
+    conDB B ; 
+    B.convert () ; 
+    return 0;
+}
