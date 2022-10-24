@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std ; 
+ class cubp 
+ {  int n , i  ; 
+ public : 
+ cubp ()
+ { cin>>n ; } 
+ int pcubp () 
+  { 
+ for (i=1;i<=n;i++)
+  { cout<<"cube of "<<i<<" = "<<i*i*i ; 
+  cout<<endl ; }
+  return 0 ; 
+  } 
+  ~cubp () { }   ; 
+ }; 
+int main () 
+{ cubp A ;
+A.pcubp () ; 
+     return  0  ; 
+     
+} 
