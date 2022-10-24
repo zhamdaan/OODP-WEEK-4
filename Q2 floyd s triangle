@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std ;  
+class ft 
+ { 
+     int i ,j ,x  ,temp; 
+     public :
+     ft ()
+{  cout<<"enter the number of rows of floyd's triangle that are to be printed";
+    cin >>x ; }
+
+int pft () 
+{
+ temp = 0; 
+  for (i=1;i<=x;i++)
+  { for (j=1;j<=i;j++)
+  { temp=temp+1 ;
+   cout<<temp<<"     "; ; 
+   } 
+  cout<<endl ; 
+  }
+ return 0 ; }
+~ft() {} }  ;
+int main () 
+ { ft A ; 
+ A.pft () ; 
+
+     return 0 ;
+ } 
